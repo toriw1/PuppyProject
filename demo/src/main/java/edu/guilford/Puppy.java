@@ -13,7 +13,7 @@ public class Puppy {
     private boolean female;
 
     //constructor
-    public Puppy () {
+    public Puppy (String name, int age, String breed, String color, String furtype, double weight, boolean spots, boolean female) {
         this.name = name;
         this.age = age;
         this.breed = breed;
@@ -22,6 +22,10 @@ public class Puppy {
         this.weight = weight;
         this.spots = spots;
         this.female = female;
+    }
+
+    public Puppy () {
+        
     }
 
 
