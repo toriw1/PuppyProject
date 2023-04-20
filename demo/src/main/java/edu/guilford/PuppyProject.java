@@ -11,31 +11,31 @@ public class PuppyProject
     public static void main( String[] args ){
     
     //instantiate a Puppy object
-    Puppy myPuppy = new Puppy();
+    Puppy myPuppy = new Puppy("Lucky", 2, "Pomeranian", "Brown", "Short", "Small", 5.5, false, "Female");
 
-    System.out.println("My Puppy's Attributes: ");
+    System.out.println("My Puppy's Attributes: " + myPuppy.toString());
 
-    //set the attributes of the Puppy object
-    myPuppy.setName("Lucky");
-    myPuppy.setAge(2);
-    myPuppy.setBreed("Pomeranian");
-    myPuppy.setColor("Black");
-    myPuppy.setFurtype("Short");
-    myPuppy.setSize("Small");
-    myPuppy.setWeight(5.0);
-    myPuppy.setSpots(false);
-    myPuppy.setSex("Female");
+    //set the attributes of the Puppy object (commented out below because I am using the constructor, just wanted to test)
+    //myPuppy.setName("Lucky");
+    //myPuppy.setAge(2);
+    //myPuppy.setBreed("Pomeranian");
+    //myPuppy.setColor("Black");
+    //myPuppy.setFurtype("Short");
+    //myPuppy.setSize("Small");
+    //myPuppy.setWeight(5.0);
+    //myPuppy.setSpots(false);
+    //myPuppy.setSex("Female");
 
     //print the attributes of the Puppy object
-    System.out.println("Name: " + myPuppy.getName());
-    System.out.println("Age: " + myPuppy.getAge());
-    System.out.println("Breed: " + myPuppy.getBreed());
-    System.out.println("Color: " + myPuppy.getColor());
-    System.out.println("Fur Type: " + myPuppy.getFurtype());
-    System.out.println("Size: " + myPuppy.getSize());
-    System.out.println("Weight: " + myPuppy.getWeight());
-    System.out.println("Spots: " + myPuppy.isSpots());
-    System.out.println("Female: " + myPuppy.getSex());
+    //System.out.println("Name: " + myPuppy.getName());
+    //System.out.println("Age: " + myPuppy.getAge());
+    //System.out.println("Breed: " + myPuppy.getBreed());
+    //System.out.println("Color: " + myPuppy.getColor());
+    //System.out.println("Fur Type: " + myPuppy.getFurtype());
+    //System.out.println("Size: " + myPuppy.getSize());
+    //System.out.println("Weight: " + myPuppy.getWeight());
+    //System.out.println("Spots: " + myPuppy.isSpots());
+    //System.out.println("Female: " + myPuppy.getSex());
 
     //call the bark method
     myPuppy.bark();

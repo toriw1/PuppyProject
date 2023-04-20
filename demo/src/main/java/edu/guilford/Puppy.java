@@ -1,5 +1,6 @@
 package edu.guilford;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Puppy {
@@ -216,6 +217,12 @@ public class Puppy {
         System.out.println("Let's play!");
     }
 
+    //toString method
+    public String toString() {
+        DecimalFormat formatter = new DecimalFormat("#0.00");
+        return "Name: " + name + ", Age: " + age + ", Breed: " + breed + ", Color: " + color + ", Fur Type: " + furtype + 
+        ", Size: "+ size + ", Weight: " + formatter.format(weight) + ", Spots: " + spots + ", Sex: " + sex;
+    }
 
 
 }
