@@ -217,6 +217,25 @@ public class Puppy {
         System.out.println("Let's play!");
     }
 
+    // write a method to help analyze weights of puppies
+    public void weightAnalysis() {
+        if (weight < 10) {
+            System.out.println("This puppy is very small!");
+        }
+        else if (weight >= 10 && weight < 20) {
+            System.out.println("This puppy is small!");
+        }
+        else if (weight >= 20 && weight < 30) {
+            System.out.println("This puppy is medium!");
+        }
+        else if (weight >= 30 && weight < 40) {
+            System.out.println("This puppy is large!");
+        }
+        else if (weight >= 40) {
+            System.out.println("This puppy is very large!");
+        }
+    }
+
     //toString method
     public String toString() {
         DecimalFormat formatter = new DecimalFormat("#0.00");
